@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+
+        var list1 = [];
+        var list2 = [];
+        var list3 = [];
+        var list4 = [];
+
+        var n = 1;
+        var x = 0;
+
+        function AddRow() {
+
+            var AddRown = document.getElementById('tableDisplay');
+            var NewRow = AddRown.insertRow(n);
+
+            list1[x] = document.getElementById("txtId").value;
+            list2[x] = document.getElementById("txtName").value;
+            list3[x] = document.getElementById("txtDate").value;
+            list4[x] = document.getElementById("txtPhone").value;
+
+            var cel1 = NewRow.insertCell(0);
+            var cel2 = NewRow.insertCell(1);
+            var cel3 = NewRow.insertCell(2);
+            var cel4 = NewRow.insertCell(3);
+
+            cel1.innerHTML = list1[x];
+            cel2.innerHTML = list2[x];
+            cel3.innerHTML = list3[x];
+            cel4.innerHTML = list4[x];
+
+            n++;
+            x++;
+        }
+
+
+    </script>
+
+    <title> My profile page</title>
+    <style>
+
+        body {
+            background-color: aqua;
+            position: relative;
+        }
+
+        #header a:hover {
+            color: #fff;
+        }
+
+        table {
+            width: 600px;
+            margin-left: 400px;
+            margin-top: 200px;
+            text-align: center;
+        }
+        
+
+        tr.even {
+            background-color: floralwhite;
+        }
+
+        tr.odd {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="navbar-brand"><h3 style="margin-left: -70px;">Dtails</h3></a>
+
+                <div class="collapse navbar-collapse" id="#Navbar" style="margin-left: 990px;">
+                    <ul class="navbar-nav mr-auto">
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </nav>
+
+    </div>
+    <div style="margin-top: -80px;">
+
+    <table border="4" id="tableDisplay" style="">
+        <thead style="color:black">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Data of Birth</th>
+                <th>phone</th>
+            </tr>
+        </thead>
+
+    </table>
+        </div>
+    <table border="2" style="margin-top: 33px; border-color:blue;">
+        <thead>
+            <tr>
+                <th>ID NO:</th>
+                <td><input type="text" class="form-control" id="txtId"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" class="form-control" id="txtName"></td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td><input type="date" class="form-control" id="txtDate"></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td><input type="number" class="form-control" id="txtPhone"></td>
+            </tr>
+            <tr id="btnAdd">
+                <td colspan="2"><button class="btn btn-primary" id="btn" onclick="AddRow()">Add new</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

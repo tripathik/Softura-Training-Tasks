@@ -1,0 +1,14 @@
+1) write a method that will check if a given number is even or not
+
+2) Take numbers from user until the user enters a negative number
+   Print the sum of the numbers that are divisible by 7
+3) Take a minimum and a maximum number from user and print all teh prime numebrs in teh range
+
+4) Take teh username and password from user and check if it is 
+"Ramu" and "1234"
+
+If yes print welcome else ask teh user to try again If teh user enters the wrong values 
+for 3 times inform the user that teh account is locked
+
+5) Create a program that will take 2 numbers and then ask the user for teh operation + or - or * or /
+Based on tehuser input perform teh operation and print the result

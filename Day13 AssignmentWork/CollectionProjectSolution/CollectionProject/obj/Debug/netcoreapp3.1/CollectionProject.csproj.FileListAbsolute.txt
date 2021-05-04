@@ -1,0 +1,13 @@
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\obj\Debug\netcoreapp3.1\CollectionProject.csprojAssemblyReference.cache
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\obj\Debug\netcoreapp3.1\CollectionProject.AssemblyInfoInputs.cache
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\obj\Debug\netcoreapp3.1\CollectionProject.AssemblyInfo.cs
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\obj\Debug\netcoreapp3.1\CollectionProject.csproj.CoreCompileInputs.cache
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\bin\Debug\netcoreapp3.1\CollectionProject.exe
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\bin\Debug\netcoreapp3.1\CollectionProject.deps.json
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\bin\Debug\netcoreapp3.1\CollectionProject.runtimeconfig.json
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\bin\Debug\netcoreapp3.1\CollectionProject.runtimeconfig.dev.json
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\bin\Debug\netcoreapp3.1\CollectionProject.dll
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\bin\Debug\netcoreapp3.1\CollectionProject.pdb
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\obj\Debug\netcoreapp3.1\CollectionProject.dll
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\obj\Debug\netcoreapp3.1\CollectionProject.pdb
+D:\Training\Day13\CollectionProjectSolution\CollectionProject\obj\Debug\netcoreapp3.1\CollectionProject.genruntimeconfig.cache

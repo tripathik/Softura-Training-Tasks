@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TransportManagementFEProject/1.0.0": {
+        "dependencies": {
+          "TransportManagementBLLibrary": "1.0.0"
+        },
+        "runtime": {
+          "TransportManagementFEProject.dll": {}
+        }
+      },
+      "TransportManagementBLLibrary/1.0.0": {
+        "runtime": {
+          "TransportManagementBLLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TransportManagementFEProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TransportManagementBLLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

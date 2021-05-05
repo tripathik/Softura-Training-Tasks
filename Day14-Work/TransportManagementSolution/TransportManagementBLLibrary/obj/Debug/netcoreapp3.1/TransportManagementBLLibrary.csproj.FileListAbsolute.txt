@@ -1,9 +1,0 @@
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\bin\Debug\netcoreapp3.1\TransportManagementBLLibrary.deps.json
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\bin\Debug\netcoreapp3.1\TransportManagementBLLibrary.dll
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\bin\Debug\netcoreapp3.1\TransportManagementBLLibrary.pdb
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.csprojAssemblyReference.cache
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.AssemblyInfoInputs.cache
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.AssemblyInfo.cs
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.csproj.CoreCompileInputs.cache
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.dll
-D:\Training\Day14\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.pdb

@@ -1,0 +1,31 @@
+Scaffold-DbContext "server=DESKTOP-EBPUJ98\SQLEXPRESS;Integrated security=true;Database=pubs;Trusted_Connection=True;" 
+Microsoft.EntityFrameworkCore.SqlServer -OutputDir OrgModel
+
+
+
+1. Install nuget packages
+2. create a class - Product(Pid(Key),Pname,Qty,Price)
+3. Create a class EFContext
+
+ public class EFContext : DbContext
+    {
+ 
+        private const string connectionString = "Server=(localdb)\\mssqllocaldb;Database=EFCore;Trusted_Connection=True;";
+ 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(connectionString);
+        }
+ 
+        public DbSet<Product> Products { get; set; }
+ 
+    }
+
+4. PM console
+Add-Migration "newmigr"
+
+5. Update-database --verbose
+
+6. Program.cs 
+
+write methods to add a record, display records

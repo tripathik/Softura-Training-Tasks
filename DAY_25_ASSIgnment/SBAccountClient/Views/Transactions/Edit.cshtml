@@ -1,0 +1,53 @@
+﻿@model SBAccountClient.Models.Transaction
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Transaction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TransactionId" class="control-label"></label>
+                <input asp-for="TransactionId" class="form-control" />
+                <span asp-validation-for="TransactionId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transactiondate" class="control-label"></label>
+                <input asp-for="Transactiondate" class="form-control" />
+                <span asp-validation-for="Transactiondate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountNumber" class="control-label"></label>
+                <input asp-for="AccountNumber" class="form-control" />
+                <span asp-validation-for="AccountNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ammount" class="control-label"></label>
+                <input asp-for="Ammount" class="form-control" />
+                <span asp-validation-for="Ammount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transactiontype" class="control-label"></label>
+                <input asp-for="Transactiontype" class="form-control" />
+                <span asp-validation-for="Transactiontype" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

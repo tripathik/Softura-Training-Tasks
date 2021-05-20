@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SBAccountClient.Models.Transaction>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TransactionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transactiondate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccountNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ammount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transactiontype)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TransactionId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Transactiondate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ammount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Transactiontype)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.TransactionId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.TransactionId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.TransactionId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.ActionLink("View All Accounts", "GetAccount")
+<br/>
+@Html.ActionLink("Click here to login", "Login")

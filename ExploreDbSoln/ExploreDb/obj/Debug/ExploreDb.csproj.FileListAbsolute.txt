@@ -1,0 +1,7 @@
+D:\Softura_Training\11th June\ExploreDbSoln\ExploreDb\bin\Debug\ExploreDb.exe.config
+D:\Softura_Training\11th June\ExploreDbSoln\ExploreDb\bin\Debug\ExploreDb.exe
+D:\Softura_Training\11th June\ExploreDbSoln\ExploreDb\bin\Debug\ExploreDb.pdb
+D:\Softura_Training\11th June\ExploreDbSoln\ExploreDb\obj\Debug\ExploreDb.csproj.AssemblyReference.cache
+D:\Softura_Training\11th June\ExploreDbSoln\ExploreDb\obj\Debug\ExploreDb.csproj.CoreCompileInputs.cache
+D:\Softura_Training\11th June\ExploreDbSoln\ExploreDb\obj\Debug\ExploreDb.exe
+D:\Softura_Training\11th June\ExploreDbSoln\ExploreDb\obj\Debug\ExploreDb.pdb

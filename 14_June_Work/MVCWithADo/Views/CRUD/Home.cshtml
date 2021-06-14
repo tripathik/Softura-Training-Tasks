@@ -1,0 +1,80 @@
+﻿@using System.Data
+@model System.Data.DataTable
+@{ 
+    Layout = null;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        Home
+
+    </title>
+</head>
+<body>
+    <div>
+        @*<form method="post" name="Display">
+            <h2>Home</h2>
+            @Html.ActionLink("Add New Book", "Insert")
+            @{
+                if (Model.Rows.Count > 0)
+                {
+                    <table border="1">
+                        <thead>
+
+                            <tr>
+                                <td>Book Id</td>
+                                <td>Title of The Book</td>
+                                <td>Author Id</td>
+                                <td>Price</td>
+                            </tr>
+                        </thead>
+                        @foreach (DataRow dr in Model.Rows)
+                        {
+                            <tr>
+                                <td>@dr["BookId"].ToString()</td>
+                                <td>@dr["Title"].ToString()</td>
+                                <td>@dr["AuthorId"].ToString()</td>
+                                <td>@dr["Price"].ToString()</td>
+                            </tr>
+                        }
+                    </table>
+                }
+
+            }
+
+        </form>*@
+
+        <form method="post" name="Display">
+            <h4>Author</h4>
+            @Html.ActionLink("Add New Author", "Insert")
+            @{
+                if (Model.Rows.Count > 0)
+                {
+                    <table border="1">
+                        <thead>
+
+                            <tr>
+                                <td>Author Id</td>
+                                <td>Author Name</td>
+                            </tr>
+                        </thead>
+                        @foreach (DataRow dr in Model.Rows)
+                        {
+                            <tr>
+                                <td>@dr["AuthorId"].ToString()</td>
+                                <td>@dr["AuthorName"].ToString()</td>
+                            </tr>
+                        }
+                    </table>
+                }
+
+            }
+
+        </form>
+    </div>
+   
+</body>
+</html>
+
+

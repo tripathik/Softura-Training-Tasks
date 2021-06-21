@@ -1,0 +1,42 @@
+﻿@model  MultipleDropDownList.Models.MultipleDDModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "MultipleDD", FormMethod.Post))
+    {
+        @Html.DropDownListFor(m => m.ProductCategoryID, Model.ProductCategories, "Please select", new { onchange = "document.forms[0].submit();" })
+        <br />
+        <br />
+
+        @Html.DropDownListFor(m => m.ProductSubcategoryID, Model.ProductSubcategories, "Please select", new { onchange = "document.forms[0].submit();", disabled = "disabled" })
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+    }
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            if ($("#ProductSubcategoryID option").length > 1) {
+                $("#ProductSubcategoryID").removeAttr("disabled");
+            }
+
+            if ($("#ProductCategoryID").val() != "" && $("#ProductSubcategoryID").val() != "") {
+                var message = "ProductCategory: " + $("#ProductCategoryID option:selected").text();
+                message += "\nProductSubcategory: " + $("#ProductSubcategoryID option:selected").text();
+                
+                alert(message);
+            }
+        });
+    </script>
+</body>
+</html>
